@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println("hi world, this is the gh-whoami extension!")
 	client, err := api.DefaultRESTClient()
 	if err != nil {
 		fmt.Println(err)
@@ -19,7 +18,7 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	fmt.Printf("running as %s\n", response.Login)
+	fmt.Printf("%s\n", response.Login)
 }
 
 // For more examples of using go-gh, see:
